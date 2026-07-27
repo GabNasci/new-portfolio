@@ -11,7 +11,7 @@ export function HeroSection() {
     <section id="sobre" className="relative min-h-svh flex items-center pt-20 overflow-hidden">
       <div className="max-w-275 mx-auto px-5 sm:px-8 relative z-10 py-16">
         <span className="block text-xs font-medium tracking-[0.14em] uppercase text-muted-foreground mb-5">
-          Abalista de Sistemas & Desenvolvedor Full-Stack
+          Analista de Sistemas & Desenvolvedor Full-Stack
         </span>
         <h1 className="font-serif font-light text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.05] mb-6">
           Gabriel<br />
