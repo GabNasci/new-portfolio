@@ -17,14 +17,14 @@ export interface Project {
 
 const projects: Project[] = [
   {
-    slug: 'order-engine-ddd',
-    title: 'Order Engine (DDD)',
-    category: 'Microsserviço Core',
-    description: 'Sistema de processamento de pedidos aplicando Domain-Driven Design (DDD), arquitetura limpa, testes automatizados e persistência em PostgreSQL.',
-    tags: ['Go (Golang)', 'DDD', 'PostgreSQL', 'Docker'],
-    bgClass: 'bg-[#C5D0F5]',
-    icon: Layers,
-    highlight: 'Arquitetura Limpa & DDD',
+    slug: 'catalog-api',
+    title: 'Catalog Service',
+    category: 'API REST & Cache',
+    description: 'API de alto desempenho para gestão e consulta de catálogo de produtos, otimizada com cache em Redis.',
+    tags: ['Go (Golang)', 'Redis', 'REST API', 'Docker'],
+    bgClass: 'bg-[#C5DBC6]',
+    icon: Server,
+    highlight: 'Performance & Cache',
   },
   {
     slug: 'event-notification-service',
@@ -37,14 +37,14 @@ const projects: Project[] = [
     highlight: 'Mensageria Assíncrona',
   },
   {
-    slug: 'catalog-api',
-    title: 'Catalog Service',
-    category: 'API REST & Cache',
-    description: 'API de alto desempenho para gestão e consulta de catálogo de produtos, otimizada com cache em Redis.',
-    tags: ['Go (Golang)', 'Redis', 'REST API', 'Docker'],
-    bgClass: 'bg-[#C5DBC6]',
-    icon: Server,
-    highlight: 'Performance & Cache',
+    slug: 'order-engine-ddd',
+    title: 'Order Engine (DDD)',
+    category: 'Microsserviço Core',
+    description: 'Sistema de processamento de pedidos aplicando Domain-Driven Design (DDD), arquitetura limpa, testes automatizados e persistência em PostgreSQL.',
+    tags: ['Go (Golang)', 'DDD', 'PostgreSQL', 'Docker'],
+    bgClass: 'bg-[#C5D0F5]',
+    icon: Layers,
+    highlight: 'Arquitetura Limpa & DDD',
   },
 ];
 
@@ -70,8 +70,8 @@ export function ProjectsSection() {
           {projects.map((project) => {
             const Icon = project.icon;
             return (
-              <Card 
-                key={project.slug} 
+              <Card
+                key={project.slug}
                 className="overflow-hidden group hover:-translate-y-1 transition-all duration-200 shadow-sm hover:shadow-md border-border flex flex-col justify-between"
               >
                 <div>
@@ -102,8 +102,8 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="px-6 pb-6 pt-0">
-                  <Link 
-                    href={`/projects/${project.slug}`} 
+                  <Link
+                    href={`/projects/${project.slug}`}
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline group-hover:gap-2.5 transition-all"
                   >
                     Ver arquitetura & detalhes <ArrowRight className="w-4 h-4" />
