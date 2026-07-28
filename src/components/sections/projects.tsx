@@ -40,7 +40,7 @@ const projects: Project[] = [
     slug: 'catalog-api',
     title: 'Catalog Service',
     category: 'API REST & Cache',
-    description: 'API de alto desempenho para gestão e consulta de catálogo de produtos, otimizada com cache em Redis, métricas e observabilidade básica.',
+    description: 'API de alto desempenho para gestão e consulta de catálogo de produtos, otimizada com cache em Redis.',
     tags: ['Go (Golang)', 'Redis', 'REST API', 'Docker'],
     bgClass: 'bg-[#C5DBC6]',
     icon: Server,
